@@ -45,11 +45,7 @@ body {
 }
 
 .header div {
-    padding: 10px;
-    /* background-color: #d1d5db; */
-    /* border: 1px solid #ccc; */
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .top-section {
@@ -87,6 +83,58 @@ body {
 .koala-icon .mdi {
     font-size: 1em;
     color: white;
+}
+
+.header-bottom {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-bottom div {
+    text-align: center;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+}
+
+.button-container button {
+    background-color: #60a5fa;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+.header-bottom .text-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.header-bottom .text-container .mdi-koala {
+    font-size: 2em;
+    background-color: #fd8d2f;
+    border-radius: 50%;
+    color: white;
+    padding: 10px;
+}
+
+.header-bottom .text-container .user-name {
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 1.1em;
 }
 
 .main-content {
