@@ -59,14 +59,14 @@ body {
 .sidebar div span {
         margin-right: 10px;
         font-size: 1.2em;
-    }
+}
 
 
-    .sidebar div:first-child {
+.sidebar div:first-child {
         font-size: 1.4em;
         margin-bottom: 40px;
-    }
+}
 
-    .sidebar div:nth-child(2) span, .sidebar div:nth-child(3) span {
+.sidebar div:nth-child(2) span, .sidebar div:nth-child(3) span {
         margin-bottom: 15px;
-    }
+}
