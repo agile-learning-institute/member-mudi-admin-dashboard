@@ -6,6 +6,10 @@ html, body {
     height: 100%;
 }
 
+* {
+    outline: 3px solid black;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -24,7 +28,9 @@ body {
     background-color: #60a5fa;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    padding: 20px;
 }
+
 
 .header {
     background-color: #ffffff;
@@ -41,3 +47,26 @@ body {
     grid-row: 2 / -1;
     z-index: 0;
 }
+
+.sidebar div {
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar div span {
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+
+
+    .sidebar div:first-child {
+        font-size: 1.4em;
+        margin-bottom: 40px;
+    }
+
+    .sidebar div:nth-child(2) span, .sidebar div:nth-child(3) span {
+        margin-bottom: 15px;
+    }
