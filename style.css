@@ -33,7 +33,7 @@
 }
 
 .search-bar {
-    width: 80%;
+    width: 100%;
 }
 
 .search {
@@ -86,4 +86,35 @@ img {
 .right-div {
     padding-top: 10px;
     padding-left: 15px;
+}
+
+
+.image-large {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fee43d !important;
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 6px;
+    margin-left: 14px;
+    padding: 0;
+}
+
+.image-large img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.greet-user {
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.name-morgan {
+    font-size: 15px;
+    font-weight: bold;
 }
