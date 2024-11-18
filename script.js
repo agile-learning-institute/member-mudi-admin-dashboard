@@ -60,7 +60,7 @@ headerContainer.appendChild(topContainer);
 
 const bottomContainer = document.createElement("section");
 bottomContainer.classList.add("bottom-container");
-bottomContainer.setAttribute("style", "background-color:#ffffff;");
+bottomContainer.setAttribute("style", "background-color:#ffffff; display: flex; flex-direction: row;");
 headerContainer.appendChild(bottomContainer);
 
 const leftContainer = document.createElement("section");
@@ -99,3 +99,38 @@ const nameText = document.createElement("div");
 nameText.classList.add("name-text", "right-div");
 nameText.innerHTML = `<span class="name-user">MorganOakley</span>`;
 rightContainer.appendChild(nameText);
+
+
+
+const firstCon = document.createElement("div");
+firstCon.classList.add("first-con");
+firstCon.setAttribute("style", "background-color:#ffffff; width: 60%; display: flex; flex-direction: row;");
+bottomContainer.appendChild(firstCon);
+
+const secondCon = document.createElement("div");
+secondCon.classList.add("second-con");
+secondCon.setAttribute("style", "background-color:#ffffff; width: 40%; display: flex; justify-content: center; align-items: center; gap: 15px; height: 100%;");
+bottomContainer.appendChild(secondCon);
+
+
+const imageLarge = document.createElement("div");
+imageLarge.classList.add("image-large");
+imageLarge.setAttribute("style", "background-color:#ffffff;");
+imageLarge.innerHTML = `<img src="./images/catmww.png" alt="cat head image">`;
+firstCon.appendChild(imageLarge);
+
+const textLarge = document.createElement("div");
+textLarge.classList.add("text-large");
+textLarge.setAttribute("style", "background-color:#ffffff; width: 80%;");
+textLarge.innerHTML = `<span class="greet-user">Hi there,</span><p class="name-morgan">Morgan Oakley (@morgan)</p>`
+firstCon.appendChild(textLarge);
+
+
+const buttonTexts = ["New", "Upload", "Share"];
+buttonTexts.forEach((text) => {
+    const button = document.createElement("button");
+    button.classList.add("btn");
+    button.innerText = text;
+    button.setAttribute("style", "background-color: #60a5fa; color: #ffffff; border-radius: 25px; border: none; padding: 5px 17px; cursor: pointer;");
+    secondCon.appendChild(button);
+});
