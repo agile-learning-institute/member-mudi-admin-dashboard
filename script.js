@@ -38,3 +38,64 @@ fetch('icons.json')
             sidebarContainer.appendChild(sidebarIcon);
         });
     });
+
+
+
+
+
+const headerContainer = document.createElement("div");
+headerContainer.classList.add("header-container");
+headerContainer.setAttribute("style", "background-color:#ffffff;");
+mainbarContainer.appendChild(headerContainer);
+
+const bodyContainer = document.createElement("div");
+bodyContainer.classList.add("body-container");
+bodyContainer.setAttribute("style", "background-color:#E5E7EB; box-shadow: 0px 0px 3px 0px black;");
+mainbarContainer.appendChild(bodyContainer);
+
+const topContainer = document.createElement("section");
+topContainer.classList.add("top-container");
+topContainer.setAttribute("style", "background-color:#ffffff; display: flex; flex-direction: row;");
+headerContainer.appendChild(topContainer);
+
+const bottomContainer = document.createElement("section");
+bottomContainer.classList.add("bottom-container");
+bottomContainer.setAttribute("style", "background-color:#ffffff;");
+headerContainer.appendChild(bottomContainer);
+
+const leftContainer = document.createElement("section");
+leftContainer.classList.add("left-container");
+leftContainer.setAttribute("style", "background-color:#ffffff; width: 65%; display: flex; flex-direction: row; gap: 20px;");
+topContainer.appendChild(leftContainer);
+
+const rightContainer = document.createElement("section");
+rightContainer.classList.add("right-container");
+rightContainer.setAttribute("style", "background-color:#ffffff; width: 35%; display: flex; flex-direction: row; gap:10px;");
+topContainer.appendChild(rightContainer);
+
+
+const searchIcon = document.createElement("div");
+searchIcon.classList.add("search-icon", "search");
+searchIcon.innerHTML = `<span class="mdi mdi-magnify"></span>`;
+leftContainer.appendChild(searchIcon);
+
+const searchBar = document.createElement("div");
+searchBar.classList.add("search-bar", "search");
+searchBar.innerHTML = `<input type="text" id="search_bar" name="search_bar">`;
+leftContainer.appendChild(searchBar);
+
+
+const notificationIcon = document.createElement("div");
+notificationIcon.classList.add("notification-icon", "right-div");
+notificationIcon.innerHTML = `<span class="mdi mdi-bell-badge-outline"></span>`;
+rightContainer.appendChild(notificationIcon);
+
+const catHeadImage = document.createElement("div");
+catHeadImage.classList.add("cat-head-image", "right-div");
+catHeadImage.innerHTML = `<img src="./images/catmww.png" alt="cat head image">`;
+rightContainer.appendChild(catHeadImage);
+
+const nameText = document.createElement("div");
+nameText.classList.add("name-text", "right-div");
+nameText.innerHTML = `<span class="name-user">MorganOakley</span>`;
+rightContainer.appendChild(nameText);
