@@ -56,7 +56,76 @@ body {
 
 .body-container {
     background-color:#E5E7EB;
-    box-shadow: 0px 0px 3px 0px black;
+    box-shadow: 0px 0px 2px 0px grey;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: [row1-start] 65% [row1-end] auto [last-line];
+    gap: 10px;
+}
+
+.right-body-con {
+    display: grid;
+    grid-template-columns: [first] 50% [line2] auto [end];
+    grid-template-rows: [first] 33% [line2] 33% [line3] auto [end];
+    gap: 10px 10px;
+    padding: 10px;
+}
+
+.left-body-con {
+    display: grid;
+    grid-template-rows: [first] 45% [line2] 45% [end];
+    /* gap: 10px 10px; */
+    padding: 10px;
+    row-gap: 40px;
+}
+
+.elem-one {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 0px grey;
+    border-left: 7px solid #fee43d;
+}
+
+.elem-one p {
+    padding: 0 10px;
+    font-size: 8px;
+    color: darkgreen;
+    font-weight: 500;
+}
+
+.elem-one h4 {
+    padding: 10px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.elem-one div {
+    display: grid;
+    grid-template-columns: [first] 12.5% [line2] 12.5% [line3] 12.5% [line4] 12.5% [line5] 12.5% [line6] 12.5% [line7] 12.5% [line8] 12.5% [end];
+    grid-template-rows: [row1-start] auto [last-line];
+    justify-items: center;
+    align-items: center;
+}
+
+.elem-two {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 0px grey;
+}
+
+.elem-two span {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 10px;
+    padding-bottom: 15px;
+}
+
+.elem-two p {
+    font-size: 6px;
+    font-weight: 500;
+    color: darkgreen;
+    padding: 10px 10px;
 }
 
 .top-container, .bottom-container {
